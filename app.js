@@ -1,6 +1,7 @@
 const url = `https://fakestoreapi.com/products`;
 const prouduct_container = document.getElementById("prouduct_container");
 const productDetail = document.getElementById("productDetail");
+const cartsetail = document.getElementById("cartsetail") 
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -27,15 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   </div>`;
 });
  try {
-     prouduct_container.addEventListener("click", async (e) => {
-  e.preventDefault();
-if (prouduct_container === value.id) {
-  
-  productDetail.innerHTML+=   window.location.href = `singleproduct.html?id=${value.id}`;
-}
-
-  
-});
+  const productcard = document.querySelector
  } catch (error) {
   console.error(error);
   
@@ -46,6 +39,19 @@ if (prouduct_container === value.id) {
   }
 });
 
+// async function card() {
+//   const carts_url = `https://fakestoreapi.com/carts`
+//   const apicards = await fetch(`${carts_url}`);
+//   const cart_data = await apicards.json()
+//   console.log(cart_data);
+
+// cart_data.map((cart_value)=>{
+// cartsetail.innerHTML = `  <p class="card_text_second">${cart_value.products[0].productId.quantity}</p>
+//    `
+// })
+  
+// }
+// card()
 // async function singleproduct() {
 //   const productsingal = await fetch(`${url}/1`)
 //   const productdata = await productsingal.json();
