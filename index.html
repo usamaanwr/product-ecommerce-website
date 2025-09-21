@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- bootsrap link  css-->
     <link
@@ -19,177 +19,267 @@
     ></script>
     <!-- Fontawesome link -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    
-    <link rel="stylesheet" href="stylle.css">
-</head>
-<body> 
+    <!-- swiperslider -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- end -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <!-- nav -->
- <div class="header">
-  <nav class="navbar">
-
-    <div class="container">
-<div class="logo">
-  <img src="./assets/logo/shopping.png" width="50px" alt="">
-  <h1>My-shope</h1>
-</div>
-<!-- links -->
- <div class="links">
-  <ul>
-    <li><a href=""></a>About</li>
-    <li><a href=""></a>Services</li>
-    <li><a href=""></a>Contact</li>
-    <li><a href=""></a>Product</li>
-  </ul>
- </div>
- <div class="btn">
-  <button class="login">Login</button>
-  <button class="sign_up">Sign Up</button>
- </div>
-    </div>
-  </nav>
- </div>
-    <div class="container">
-      <!-- Content here -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./assets/liviu-c-ti3P_Bm2zio-unsplash.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/nordwood-themes-Nv4QHkTVEaI-unsplash.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/c-d-x-PDX_a_82obo-unsplash (1).jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-
-
-<section>
- <div class="container">
-        <div class="porduct_name">
-          <h1>Products Categories</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi veritatis beatae amet?</p>
+    <nav class="navbar bg-light fixed-top">
+      <div class="container">
+        <div class="nav_logo">
+          <img
+            class="navbar-brand"
+            src="./assets/logo/shopping.png"
+            width="40px"
+            alt=""
+          />
+          <h2>My-shope</h2>
         </div>
-        <div id="prouduct_container" class="prouduct_card">
-          <div class="card_container"></div>
+        <div class="links">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./HTML/about.html">About</a>
+            <a class="nav-link" href="./HTML/product_detail.html">Products</a>
+            <a class="nav-link" href="./HTML/contact.html">Contact Us</a>
+          </li>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My-Shope</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../HTML/about.html">About</a>
+                <a class="nav-link" href="../HTML/product_detail.html"
+                  >Products</a
+                >
+                <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
+    </nav>
+    <!-- Content here -->
 
-</section>
+    <section>
+      <div class="container">
+        <div class="porduct_name">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade parent"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/daniel-storek-JM-qKEd1GMI-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/c-d-x-PDX_a_82obo-unsplash (1).jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/rachit-tank-2cFZ_FB08UM-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </section>
 
-<!-- cards -->
-
-<section>
-<div class="container">
-  <div id="cartsetail"></div>
-</div>
-</section>
-<!-- footer -->
-<section>
-<!-- footer section start  -->
+    <!-- cards -->
+    <!-- card section -->
+    <section>
+      <div class="container">
+        <div class="all_products">
+          <h1>All Products</h1>
+          <div></div>
+        </div>
+        <div id="prouduct_container" class="prouduct_card"></div>
+      </div>
+    </section>
+    <!-- end card section -->
+    <section>
+      <div class="container">
+        <div id="cartsetail"></div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section>
+      <!-- footer section start  -->
       <footer class="footer">
         <div class="container">
-        <div class="footer-container">
-         
-          <div class="footer-column">
-            <h4>POPULAR CATEGORIES</h4>
-            <ul>
-              <li><a href="#">Cars</a></li>
-              <li><a href="#">Flats for rent</a></li>
-              <li><a href="#">Mobile Phones</a></li>
-              <li><a href="#">Jobs</a></li>
-            </ul>
-          </div>
-      
-          <div class="footer-column">
-            <h4>TRENDING SEARCHES</h4>
-            <ul>
-              <li><a href="#">Bikes</a></li>
-              <li><a href="#">Watches</a></li>
-              <li><a href="#">Books</a></li>
-              <li><a href="#">Dogs</a></li>
-            </ul>
-          </div>
-      
-          <div class="footer-column">
-            <h4>ABOUT US</h4>
-            <ul>
-              <li><a href="#">About Dubizzle Group</a></li>
-              <li><a href="#">OLX Blog</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">OLX for Businesses</a></li>
-            </ul>
-          </div>
-      
-          <div class="footer-column">
-            <h4>OLX</h4>
-            <ul>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Terms of use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-      
-          <div class="footer-column social" sty>
-            <h4>FOLLOW US</h4>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+          <div class="footer-container">
+            <div class="footer-column">
+              <img src="./assets/logo/shopping.png" width="60px" alt="" />
+              <h4>About Us</h4>
+              <div class="about_footer">
+                <p>
+                  Welcome to My_shope, your trusted destination for high-quality
+                  products
+                </p>
+
+                <p>
+                  every product is crafted with care to meet your needs —
+                  whether it’s for everyday use, personal care, or lifestyle
+                  improvement. Our mission is simple:
+                </p>
+              </div>
             </div>
-            <div class="app-links">
-              <img src="./assets/logo/app.galery.svg" alt="App Store">
-              <img src="./assets/logo/apple images.svg" alt="Google Play">
-              <img src="./assets/logo/google images.svg" alt="apple Play">
+
+            <div class="footer-column">
+              <h4>TRENDING SEARCHES</h4>
+              <ul>
+                <li><a href="#">Bikes</a></li>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Dogs</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>CONTACT INFO</h4>
+              <div class="about_footer">
+                <p>Got a question or need help? We’re here for you!</p>
+                <h5><b>Email:</b>myshope34@gmail.com</h5>
+                <h5><b>Phone:</b>1 (234) 567-8900</h5>
+                <h5>
+                  <b>Address:</b>123 Market Street, Suite 456, New York, USA
+                </h5>
+              </div>
+            </div>
+
+            <div class="footer-column social" sty>
+              <h4>SOCIAL</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="app-links">
+                <img src="./assets/logo/app.galery.svg" alt="App Store" />
+                <img src="./assets/logo/apple images.svg" alt="Google Play" />
+                <img src="./assets/logo/google images.svg" alt="apple Play" />
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </footer>
       <div class="bottom">
         <div class="container">
-
           <div class="copy">
-            <h6> Classified in Pakistan </h6>
-            <p>.2006-2025 OLX</p>
+            <h6>Classified in Pakistan</h6>
+            <p>.2006-2025</p>
           </div>
         </div>
       </div>
-</section>
-<script src="app.js"></script>
-</body>
+    </section>
+    <script src="./JS/product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>
