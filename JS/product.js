@@ -1,18 +1,17 @@
 const url = `https://fakestoreapi.com/products`;
 const prouduct_container = document.getElementById("prouduct_container");
 const productDetail = document.getElementById("productDetail");
+const allcarts = document.getElementById("allcarts")
 
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const product_cards = await fetch(`${url}`);
+    const cards_data = await product_cards.json();
+    console.log(cards_data);
 
-document.addEventListener("DOMContentLoaded", async ()=>{
-try {
-  const product_cards = await fetch(`${url}`);
-  const cards_data = await product_cards.json();
-  console.log(cards_data);
-  
-//show cards-data
-cards_data.map((value) => {
-
-  prouduct_container.innerHTML += `<div class="card_item" data-id="${value.id}">
+    //show cards-data
+    cards_data.map((value) => {
+      prouduct_container.innerHTML += `<div class="card_item" data-id="${value.id}">
   <div class="cardsBody">
   <img src="${value.image}" alt="">
 <p>$ ${value.price}</p>
@@ -22,26 +21,41 @@ cards_data.map((value) => {
 <p>Order ${value.rating.count}</p>
 </div>
   </div>
-</div>`
-})
-const cardClick =document.querySelectorAll(".card_item");
+</div>`;
+    });
+    const cardClick = document.querySelectorAll(".card_item");
 
-cardClick.forEach((cards) => {
-  cards.addEventListener("click", async (e)=>{
-    e.preventDefault();
-    const cardId = cards.getAttribute("data-id");
-    console.log(cardId);
-    window.location.href = `/HTML/product_detail.html?id=${cardId}`
-  })
+    cardClick.forEach((cards) => {
+      cards.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const cardId = cards.getAttribute("data-id");
+        console.log(cardId);
+        window.location.href = `/HTML/product_detail.html?id=${cardId}`;
+      });
+    });
+  } catch (error) {
+    console.error(error);
+  }
 });
-} catch (error) {
-  console.error(error);
-  
-  
-}
-})
+
+// document.addEventListener("DOMContentLoaded", async () => {
+//   try {
+//     const allcards = await fetch(`https://fakestoreapi.com/carts`);
+//     const allcards_data = await allcards.json();
+//     console.log(allcards_data);
+
+//     allcards_data.map((item) =>{
+//       allcarts.innerHTML += `<div class="card-body">
+//     <h5 class="card-title">${item.date}</h5>
+//     <h5 class="card-title">${item.id}</h5>
+//     <h5 class="card-title">${item.products[0].productId}</h5>
+//     <h5 class="card-title">${item.products[1].quantity}</h5>
 
 
+// </div>`
+//     })
+//   } catch (error) {}
+// });
 // document.addEventListener("DOMContentLoaded", async () => {
 //   try {
 //     const product_data = await fetch(`${url}`);
@@ -73,18 +87,15 @@ cardClick.forEach((cards) => {
 //   card.addEventListener("click" , (e)=>{
 //     e.preventDefault();
 //     console.log(productsCard);
-    
+
 //         const cardId = card.getAttribute("data-id")
 //       window.location.href = `./HTML/product_detail.html?id=${cardId}`
 //         console.log(cardId);
-    
+
 //   })
 // });
-
-
 
 //   } catch (error) {
 //     console.error(error);
 //   }
 // });
-

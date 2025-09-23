@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", async () =>{
 <p>Rating ${detail_data.rating.rate}</p>
 <p>Order ${detail_data.rating.count}</p>
 </div>
+<div class = "product_btn">
+<button>Add to card</button>
+<button>buy Now</button>
+</div>
   </div>
 </div>`
         } catch (error) {
