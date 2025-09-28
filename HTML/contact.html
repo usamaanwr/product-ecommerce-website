@@ -12,10 +12,10 @@
       crossorigin="anonymous"
     />
     <!-- bootstrap link javascript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
+     <!-- SweetAlert link -->
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+     crossorigin="anonymous"
     ></script>
     <!-- Fontawesome link -->
     <link
@@ -25,7 +25,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    
     <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
@@ -183,12 +183,53 @@
         <!-- end -->
       </div>
     </section>
-    <!-- end -->
-
-    <!-- singal product cards show get id -->
+  
     <section>
       <div class="container">
-        <div id="product_detail"></div>
+        <!-- detailpages -->
+
+        <div class="detail_contact">
+          <div class="phoneicon">
+          <div>
+            <!-- side bar -->
+              <!-- icon div -->
+              <span><i class="fa-solid fa-phone"></i></span>
+              <h6>Call </h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus numquam corporis in?</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <hr>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus numquam corporis in?</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+<!-- end -->
+<div>
+  <!-- form pages -->
+   <div>
+
+     <div class="contact_inputs">
+       <div class="contact">
+         <input type="text" placeholder="Your name" id="conatact_inputs">
+              </div>
+              <div>
+                <input type="email" placeholder="Your Email" id="email_inputs">
+              </div>
+              <div>
+                <input type="number" placeholder="Phone" id="number_inputs">
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <div class="textarea">
+            <textarea name="" id="text_area" placeholder="type Some thing..."></textarea>
+          </div>
+          <div class="sendmessage">
+            <button onclick="sendmessage()">Send Message</button>
+          </div>
+        </div>
+      </div>
+      </div>
       </div>
     </section>
     <!-- end section -->
@@ -264,5 +305,8 @@
     </section>
 
     <script src="../JS/product_detail.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+    <script src="../JS/app.js"></script>
   </body>
 </html>
