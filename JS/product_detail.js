@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () =>{
 <p>Order ${detail_data.rating.count}</p>
 </div>
 <div class = "product_btn">
-<button>Add to card</button>
+ <button id="addcard" onclick="savecard()">Add to Card</button>
 <button>buy Now</button>
 </div>
   </div>
@@ -35,3 +35,4 @@ document.addEventListener("DOMContentLoaded", async () =>{
         }
     }
 })
+

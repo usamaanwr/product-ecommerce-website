@@ -38,6 +38,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded" , async ()=>{
+try {
+  const updateproducturl = await fetch(`${url}/{id}`);
+  const upbdatedata =  await updateproducturl.json()
+  console.log(upbdatedata);
+  
+  
+} catch (error) {
+  console.error(error);
+  
+}
+})
 // document.addEventListener("DOMContentLoaded", async () => {
 //   try {
 //     const allcards = await fetch(`https://fakestoreapi.com/carts`);
@@ -56,7 +68,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 //     })
 //   } catch (error) {}
 // });
-// document.addEventListener("DOMContentLoaded", async () => {
+// // document.addEventListener("DOMContentLoaded", async () => {
 //   try {
 //     const product_data = await fetch(`${url}`);
 //     const data = await product_data.json();
