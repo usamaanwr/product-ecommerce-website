@@ -1,7 +1,7 @@
 const url = `https://fakestoreapi.com/products`;
 const prouduct_container = document.getElementById("prouduct_container");
 const productDetail = document.getElementById("productDetail");
-const allcarts = document.getElementById("allcarts")
+const allcarts = document.getElementById("allcarts");
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -38,18 +38,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded" , async ()=>{
-try {
-  const updateproducturl = await fetch(`${url}/{id}`);
-  const upbdatedata =  await updateproducturl.json()
-  console.log(upbdatedata);
-  
-  
-} catch (error) {
-  console.error(error);
-  
-}
-})
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const updateproducturl = await fetch(`${url}/{id}`);
+    const upbdatedata = await updateproducturl.json();
+    console.log(upbdatedata);
+  } catch (error) {
+    console.error(error);
+  }
+});
 // document.addEventListener("DOMContentLoaded", async () => {
 //   try {
 //     const allcards = await fetch(`https://fakestoreapi.com/carts`);
@@ -62,7 +59,6 @@ try {
 //     <h5 class="card-title">${item.id}</h5>
 //     <h5 class="card-title">${item.products[0].productId}</h5>
 //     <h5 class="card-title">${item.products[1].quantity}</h5>
-
 
 // </div>`
 //     })

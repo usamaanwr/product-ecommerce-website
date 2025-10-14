@@ -4,15 +4,17 @@ const number = document.getElementById("number_inputs").value
 const text_area = document.getElementById("text_area").value
 
 function sendmessage() {
-if (text_area.value.trim() !== "") {
-    Swal.fire({
-  title: "The Internet?",
-  text: "That thing is still around?",
-  icon: "question"
-});
+
+let users = JSON.parse(localStorage.getItem("users"))
+if (!users) {
+    users = []
 }
-
-
+if (name.value && email.value && number.value && text_area.value) {
+    for (let i = 0; i < users.length; i++) {
+     
+        
+    }
+}
     
  }
  sendmessage()
