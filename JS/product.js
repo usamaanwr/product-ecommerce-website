@@ -1,5 +1,5 @@
 const url = `https://fakestoreapi.com/products`;
-const prouduct_container = document.getElementById("prouduct_container");
+const product_container = document.getElementById("product_container");
 const productDetail = document.getElementById("productDetail");
 const allcarts = document.getElementById("allcarts");
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     //show cards-data
     cards_data.map((value) => {
-      prouduct_container.innerHTML += `<div class="card_item" data-id="${value.id}">
+      product_container.innerHTML += `<div class="card_item" data-id="${value.id}">
   <div class="cardsBody">
   <img src="${value.image}" alt="">
 <p>$ ${value.price}</p>
