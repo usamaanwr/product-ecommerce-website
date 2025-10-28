@@ -45,16 +45,117 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- end -->
-    <link rel="stylesheet" href="../CSS/addtocard.css" />
+    <link rel="stylesheet" href="../CSS/addtocart.css" />
+    <link rel="stylesheet" href="/CSS/style.css">
     <!-- <link rel="stylesheet" href="CSS/imageslider.css" /> -->
 </head>
 <body>
+   <!-- nav -->
+    <nav class="navbar bg-light fixed-top">
+      <div class="container">
+        <div class="nav_logo">
+          <img
+            class="navbar-brand"
+            src="../assets/logo/shopping.png"
+            width="40px"
+            alt=""
+          />
+          <h2>My-shope</h2>
+        </div>
+        <div class="links">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../HTML/about.html">About</a>
+            <a class="nav-link" href="../HTML/product_detail.html">Products</a>
+            <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
+          </li>
+        </div>
+   <!-- navicon user cand carts -->
+<div class="nav_icon">
+  <div>
+            <a href="./HTML/addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+          <div>
+           <a href=""><i class="fa-solid fa-user"></i></a>
+          </div>
+</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My-Shope</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../HTML/about.html">About</a>
+                <a class="nav-link" href="../HTML/product_detail.html"
+                  >Products</a
+                >
+                <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
   <h1>heloo</h1>
     <div class="conatiner">
       <h1>Your Cart</h1>
       <div id="cartContainer"></div>
     </div>
-    <script src="../JS/addtocard.js"></script>
+    <script src="../JS/addtocart.js"></script>
     <!-- <script src="../JS/product_detail.js"></script> -->
     <!-- <script src="../JS/addtocard.js"></script> -->
 </body>
