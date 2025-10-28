@@ -55,7 +55,7 @@
         <div class="nav_logo">
           <img
             class="navbar-brand"
-            src="./assets/logo/shopping.png"
+            src="../assets/logo/shopping.png"
             width="40px"
             alt=""
           />
@@ -63,13 +63,21 @@
         </div>
         <div class="links">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
             <a class="nav-link" href="../HTML/about.html">About</a>
             <a class="nav-link" href="../HTML/product_detail.html">Products</a>
             <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
           </li>
         </div>
-
+        <!-- navicon user cand carts -->
+<div class="nav_icon">
+  <div>
+            <a href="./HTML/addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+          <div>
+           <a href="./HTML/login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+</div>
         <button
           class="navbar-toggler"
           type="button"
@@ -97,12 +105,12 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-                <a class="nav-link" href="./HTML/about.html">About</a>
-                <a class="nav-link" href="./HTML/product_detail.html"
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../HTML/about.html">About</a>
+                <a class="nav-link" href="../HTML/product_detail.html"
                   >Products</a
                 >
-                <a class="nav-link" href="./HTML/contact.html">Contact Us</a>
+                <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -115,8 +123,8 @@
                   Dropdown
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sign in</a></li>
-                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  <li><a class="dropdown-item" href="./HTML/login.html">Sign in</a></li>
+                  <li><a class="dropdown-item" href="./HTML/register.html">Sign Up</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
@@ -141,6 +149,7 @@
         </div>
       </div>
     </nav>
+    <!--nav bar is end  -->
     <!-- end navbar -->
     <!-- headerimages section is start -->
     <section>
@@ -156,7 +165,7 @@
                 series. Featuring advanced health tracking, long battery life,
                 and elegant designs — perfect for your daily lifestyle.
               </p>
-              <a href="#" class="slide-button"><span>Learn More</span></a>
+              <!-- <a href="#" class="slide-button"><span>Learn More</span></a> -->
             </div>
           </div>
           <div class="slider-item swiper-slide">
@@ -230,16 +239,8 @@
     </section>
     <!-- headerimages section is end -->
 
-    <!-- allcards section fetch in api-->
-    <section>
-      <div class="container">
-        <div id="allcarts"></div>
-      </div>
-    </section>
-    <!-- allcards section fetch in api end-->
-
     <!-- cards -->
-    <!-- card section -->
+    <!-- card section paragraph  -->
     <section>
       <div class="container">
         <div class="all_products">
