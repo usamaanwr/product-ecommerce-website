@@ -87,6 +87,24 @@
  text-decoration: underline;
  color: #002f34;
 }
+
+.nav_icon{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav_icon a{
+  color: #002f34;
+}
+.nav_icon a:hover{
+ color: red;
+}
+.navbar-toggler{
+  display: none;
+}
+
 .porduct_name{
   margin-top: 100px;
 }
@@ -301,6 +319,12 @@ left: 0;
  .links{
   flex-direction: column;
   display: none;
+ }
+ .nav_icon{
+  display: none;
+ }
+ .navbar-toggler{
+  display: block;
  }
 }
 
