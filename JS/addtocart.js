@@ -1,20 +1,24 @@
-const cartContainer = document.getElementById("cartContainer");
-
-document.addEventListener("DOMContentLoaded" ,async (e) => {
-  try {
+const cartContainer =document.getElementById("cartContainer");
+document.addEventListener("click" ,async () => {
+    let cartdetail = JSON.parse(localStorage.getItem("cart"))||[];
+    console.log(cartdetail);
     
-     
-     const cartDatashow  = await fetch(`https://fakestoreapi.com/carts`,{
-       method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(
+    if (cartdetail.length === 0) {
+        cartContainer.innerHTML = "<h2>No item In cart</h2>"
+        return
+    }
     
-  )
-     })
-const cartsDetailshow = await cartDatashow.json()
-console.log(cartsDetailshow );
-  } catch (error) {
-    console.error(error);
-    return error
-  }
+    cartContainer.innerHTML = ""; 
+    
+    cartdetail.forEach(item => {
+        cartContainer.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.image}" width="100">
+                <h3>${item.title}</h3>
+                <p>Price: $${item.price}</p>
+                <p>Product ID: ${item.id}</p>
+            </div>
+            <hr>
+        `;
+    }); 
 })

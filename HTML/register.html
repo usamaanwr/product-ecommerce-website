@@ -44,9 +44,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- end -->
-    <link rel="stylesheet" href="../CSS/imageslider.css" />
+    <link rel="stylesheet" href="../CSS/register.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/register.css">
   </head>
   <body>
     <!-- nav -->
@@ -72,12 +71,12 @@
         <!-- navicon user cand carts -->
         <div class="nav_icon">
           <div>
-            <a href="./HTML/addtocart.html"
+            <a href="../HTML/addtocart.html"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
           </div>
           <div>
-            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href="../HTML/login.html"><i class="fa-solid fa-user"></i></a>
           </div>
         </div>
         <button
@@ -152,179 +151,41 @@
       </div>
     </nav>
     <!-- navbar end -->
-    <!-- headerimages -->
-    <section>
-      <div class="slider-container">
-        <!-- Slider List Items -->
-        <div class="slider-wrapper swiper-wrapper">
-          <div class="slider-item swiper-slide">
-            <div class="slide-content">
-              <h3 class="slide-subtitle">Latest Arrival</h3>
-              <h2 class="slide-title">Stylish Smartwatch Collection</h2>
-              <p class="slide-description">
-                Stay connected and stylish with MyShop’s brand-new smartwatch
-                series. Featuring advanced health tracking, long battery life,
-                and elegant designs — perfect for your daily lifestyle.
-              </p>
-              <a href="#" class="slide-button"><span>Learn More</span></a>
-            </div>
-          </div>
-          <div class="slider-item swiper-slide">
-            <div class="slide-content">
-              <h3 class="slide-subtitle">Trending Now</h3>
-              <h2 class="slide-title">Premium Wireless Headphones</h2>
-              <p class="slide-description">
-                Experience powerful sound and total freedom with our latest
-                Bluetooth headphones. Crystal-clear calls, deep bass, and
-                40-hour playback time.
-              </p>
-            </div>
-          </div>
-          <div class="slider-item swiper-slide">
-            <div class="slide-content">
-              <h3 class="slide-subtitle">Hot Offer</h3>
-              <h2 class="slide-title">Laptops & Accessories Sale</h2>
-              <p class="slide-description">
-                Get up to 30% off on top laptop brands — Dell, HP, Lenovo and
-                more. Fast performance for work, gaming, and creativity.
-                Limited-time offer!
-              </p>
-              <a href="#" class="slide-button"><span>Learn More</span></a>
-            </div>
-          </div>
-          <div class="slider-item swiper-slide">
-            <div class="slide-content">
-              <h3 class="slide-subtitle">New Collection</h3>
-              <h2 class="slide-title">Modern Home & Kitchen Essentials</h2>
-              <p class="slide-description">
-                Upgrade your home with premium kitchenware and smart home
-                devices. Affordable prices with quality you can trust.
-              </p>
-              <a href="#" class="slide-button"><span>Learn More</span></a>
-            </div>
-          </div>
-          <div class="slider-item swiper-slide">
-            <div class="slide-content">
-              <h3 class="slide-subtitle">Exclusive Offer</h3>
-              <h2 class="slide-title">Men’s & Women’s Fashion Trends</h2>
-              <p class="slide-description">
-                Discover the latest fashion arrivals — stylish apparel, shoes,
-                and accessories crafted for comfort and confidence.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Slider Pagination -->
-        <div class="slider-controls">
-          <ul class="slider-pagination">
-            <div class="slider-indicator"></div>
-            <li class="slider-tab current">Smartwatch Collection</li>
-            <li class="slider-tab">Wireless Headphonet</li>
-            <li class="slider-tab">Laptops & Accessories</li>
-            <li class="slider-tab">Home & Kitchen Essentials</li>
-            <li class="slider-tab">Fashion & Style</li>
-          </ul>
-        </div>
-
-        <!-- Slider Navigations (Prev/Next) -->
-        <div class="slider-navigations">
-          <button id="slide-prev" class="material-symbols-rounded">
-            arrow_left_alt
-          </button>
-          <button id="slide-next" class="material-symbols-rounded">
-            arrow_right_alt
-          </button>
+    <!-- register page  -->
+    <div class="registerContainer">
+      <div class="container">
+        <h1>Welcome! Create Your Account</h1>
+        <div class="registerContent">
+          <div><!-- images is hold --></div>
+          <div class="registerInputs">
+            <!-- register inputs1 -->
+            <div>
+              <label for="">Name</label>
+              <input type="text" placeholder="Name" id="reg_name" />
+              <p class="error"></p>
+            </div>
+            <!-- end -->
+            <!-- register inputs2 -->
+            <div>
+              <label for="">Email</label>
+              <input type="text" placeholder="Email" id="reg_email" />
+               <p class="error"></p>
+            </div>
+            <!-- end -->
+            <!-- register inputs3 -->
+            <div>
+              <label for="">Password</label>
+              <input type="text" placeholder="Password" id="reg_password" />
+               <p class="error"></p>
+            </div>
+            <!-- end -->
+          </div>
+          <button onclick="iSsignUpUser()">Sign Up</button>
         </div>
       </div>
-    </section>
-    <!-- end header images -->
-    <!-- register sturcture -->
-    <!-- main div -->
-    <div class="container">
-      <!-- flex container -->
-
-      <div class="login_form_conatiner">
-        <div class="left">
-          <h1>Create a Account</h1>
-          <div class="icon">
-            <a href="https://www.linkedin.com/" target="_blank"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a href="https://www.google.com/" target="_blank"
-              ><i class="fa-brands fa-google-plus-g"></i
-            ></a>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-          <p>or use your email for Sign in</p>
-
-          <!-- icon 1 -->
-          <div class="icon_inputs">
-            <span><i class="fa-solid fa-user"></i></span>
-            <input type="text" placeholder="Name" id="user_name" />
-          </div>
-
-          <!-- icon 2 -->
-          <div class="icon_inputs2">
-            <span><i class="fa-solid fa-at"></i></span>
-
-            <input type="email" placeholder="Email" id="user_email" />
-          </div>
-
-          <!-- icon 3 -->
-          <div class="icon_inputs3">
-            <span><i class="fa-solid fa-phone"></i></span>
-
-            <input type="number" placeholder="Phone" id="user_Phone" />
-          </div>
-
-          <!-- icon 2 felx  -->
-          <div class="icon_inputs_flex">
-            <div class="icon_inputs4">
-              <span><i class="fa-solid fa-lock"></i></span>
-              <input
-                type="password"
-                placeholder="Password"
-                id="user_Password"
-              />
-            </div>
-
-            <div class="icon_inputs4">
-              <span><i class="fa-solid fa-square-check"></i></span>
-              <input
-                type="password"
-                placeholder="Confirm Password"
-                id="con_password"
-              />
-            </div>
-          </div>
-          <!-- button -->
-          <button onclick="register()">sign Up</button>
-        </div>
-        <!--left end -->
-
-        <!-- text and links -->
-
-        <div class="right">
-          <div class="content">
-            <h1>Welcome Back</h1>
-            <p>Create your account and explore new possibilities.</p>
-          </div>
-          <div>
-            <img src="../assets/headerimages/Sign up-amico.svg" width="200px" alt="" />
-          </div>
-          <span>
-            <a href="/HTML/login.html">Already have an account? Login</a></span
-          >
-        </div>
-        <!-- right end -->
-      </div>
-      <!-- login container end -->
     </div>
-
-    <!-- footer -->
+    <!-- end this page -->
     <section>
       <!-- footer section start  -->
       <footer class="footer">
@@ -394,8 +255,11 @@
       </div>
     </section>
     <!-- end footer section  -->
-    <script src="../JS/imageslider.js"></script>
-    <script src="../JS/product_detail.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+
+   
+
+    <script src="../JS/register.js"></script>
+    
   </body>
 </html>
